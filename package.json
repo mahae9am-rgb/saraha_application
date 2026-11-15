@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "start": "node source/server.js",
+  "dev": "node --watch source/server.js"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -17,10 +18,13 @@
     "cors": "^2.8.6",
     "dotenv": "^18.0.3",
     "express": "^5.2.1",
+    "express-rate-limit": "^8.7.3",
+    "file-type": "^22.2.0",
     "google-auth-library": "^11.1.0",
     "ioredis": "^6.0.0",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.10.1",
+    "multer": "^2.4.0",
     "node-mailjet": "^6.0.11",
     "nodemailer": "^10.0.10",
     "zod": "^4.6.5"

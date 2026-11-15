@@ -17,6 +17,10 @@ const messageSchema = new Schema({
         required:true
 
     },
+    conversation:{
+        type:Schema.Types.ObjectId,
+        ref:"conversation"
+    },
     isDeleted:{
         type:Boolean,
         default:false

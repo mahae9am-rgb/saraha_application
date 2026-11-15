@@ -6,4 +6,7 @@ const messageRouter = Router()
 messageRouter.post('/',guard,messageController.sendMessages)
 messageRouter.post('/public',guard,messageController.sendMessages)
 messageRouter.get('/',guard,messageController.getAllMessage)
+
+messageRouter.post('/conversation/:conversationId',guard,messageController.createMessagesConversation)
+messageRouter.get('./conversation/:conversationId',guard,messageController.getConversationMessages)
 export default messageRouter

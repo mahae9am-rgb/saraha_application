@@ -3,10 +3,13 @@ import mongoose from "mongoose";
 import { env } from "./lib/config/env.js"; 
 import { createApp } from "./app.js";
 import http from 'http'
-
+try{
     await mongoose.connect(env.db.URL)
     logger.info('mongoose connect')
-
+}catch(error){
+    console.error(error.message);
+    
+}
 const app = createApp()
 const server = http.createServer(app)
 server.listen(env.PORT,()=>{logger.info(`server is running on port ${env.PORT}`)})

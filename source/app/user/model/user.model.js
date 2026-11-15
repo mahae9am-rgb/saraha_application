@@ -1,4 +1,6 @@
 import mongoose,{ Schema } from "mongoose";
+import { type } from "os";
+import { number } from "zod";
 const userSchema =new Schema({
     name:{
         type:String,
@@ -13,6 +15,13 @@ const userSchema =new Schema({
         unique:true,
         lowercase:true,
         trim:true
+    },
+    faildLoginAttemps:{
+        type:number,
+        default:0
+    },
+    lockUntil:{
+        type:Date
     },
     password:{
         type:String,
@@ -33,6 +42,20 @@ const userSchema =new Schema({
         type:Boolean,
         default:false
     
+    },
+    profilePicPath:String,
+    coverImagePath:[String],
+    cvPath:String,
+    
+    twoStepVerification:{
+        type:Boolean,
+        default:false
+    },
+    otp:{
+        type:String
+    },
+    otpExpires:{
+        type:Date
     }
 })
 export const User = mongoose.model('User',userSchema)
