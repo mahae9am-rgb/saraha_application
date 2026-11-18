@@ -35,5 +35,6 @@ A secure, anonymous-messaging backend API built with **Node.js**, **Express**, *
 ### Installation & Setup
 
 1. Clone the repository:
-   git clone https://github.com/mahae9am-rgb/saraha_application.git
-cd saraha_application
+   ```bash
+   git clone [https://github.com/mahae9am-rgb/saraha_application.git](https://github.com/mahae9am-rgb/saraha_application.git)
+   cd saraha_application
