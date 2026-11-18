@@ -15,7 +15,6 @@ const server = http.createServer(app)
 server.listen(env.PORT,()=>{logger.info(`server is running on port ${env.PORT}`)})
 
 
-
 export function shutdown(){
     setTimeout(()=>process.exit(1),1000).unref()
     
