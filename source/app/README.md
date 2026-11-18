@@ -32,9 +32,13 @@ A secure, anonymous-messaging backend API built with **Node.js**, **Express**, *
 * MongoDB running locally or via MongoDB Atlas
 * Redis server running
 
-### Installation & Setup
 
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/mahae9am-rgb/saraha_application.git](https://github.com/mahae9am-rgb/saraha_application.git)
-   cd saraha_application
+## Installation & Setup
+
+Clone the repository:
+git clone https://github.com/mahae9am-rgb/saraha_application.git
+
+cd saraha_application
+
+Install dependencies:
+npm install
